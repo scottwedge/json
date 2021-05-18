@@ -25,8 +25,13 @@ print(j)
 
 f = open(file, "w")
 f.write(j + "\n")
-f.write(s + "\n")
+#f.write(s + "\n")
 f.close()
 
+
+# Load formatted file
+f = open(file, "r")
+j = json.load(f)
+print(j)
 
 
